@@ -1,0 +1,14 @@
+[Unit]
+Description=Assist @ reboot
+
+[Service]
+ExecStart=/home/pi/assist.py
+User=pi
+Group=pi
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=assist
+
+[Install]
+WantedBy=multi-user.target
+
