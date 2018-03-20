@@ -12,14 +12,32 @@ Create the service file. Type:
 sudo nano /etc/systemd/system/assist.service
 ```
 Copy and paste all text in the assist.service file included in this repository.
+```
+[Unit]
+Description=Assist @ reboot
+
+[Service]
+ExecStart=/home/pi/assist.py
+User=pi
+Group=pi
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=assist
+
+[Install]
+WantedBy=multi-user.target
+```
 Control-X to exit
 Y to save
 Enter to complete the save.
 
 Enable it (for next boot) by typing in the terminal:
+```
 sudo systemctl enable assist.service
+```
 
 Start it by typing:
+```
 sudo systemctl start assist.service
-
+```
 Reboot your Raspberry Pi
