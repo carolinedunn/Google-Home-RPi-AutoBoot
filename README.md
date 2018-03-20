@@ -30,9 +30,7 @@ SyslogIdentifier=assist
 [Install]
 WantedBy=multi-user.target
 ```
-Control-X to exit
-Y to save
-Enter to complete the save.
+Control-X to exit, and Y to save. Press Enter to complete the save.
 
 Next, copy your assistant demo to pi folder
 ```
