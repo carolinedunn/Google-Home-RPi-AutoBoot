@@ -31,6 +31,12 @@ Control-X to exit
 Y to save
 Enter to complete the save.
 
+Next, copy your assistant demo to pi folder
+```
+cd ~/AIY-projects-python/src/examples/voice
+cp assistant_library_demo.py ~/assist.py
+```
+
 Enable it (for next boot) by typing in the terminal:
 ```
 sudo systemctl enable assist.service
