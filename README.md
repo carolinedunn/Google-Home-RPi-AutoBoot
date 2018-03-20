@@ -50,3 +50,12 @@ Start it by typing:
 sudo systemctl start assist.service
 ```
 Reboot your Raspberry Pi
+
+After you get it working, here are links to Easter Eggs / fun stuff to ask your Google Home
+
+https://www.the-ambient.com/features/best-google-home-easter-eggs-166
+
+https://www.pocket-lint.com/smart-home/news/google/143472-google-assistant-easter-eggs-your-complete-guide-to-hidden-assistant-commands
+
+https://www.techadvisor.co.uk/feature/digital-home/funny-google-assistant-3659188/
+
