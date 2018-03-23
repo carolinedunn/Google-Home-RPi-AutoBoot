@@ -24,7 +24,7 @@ Description=Assist @ reboot
 [Service]
 Type=simple
 ExecStart=/home/pi/AIY-projects-python/src/examples/voice/main.py
-Type=simple
+Restart=on-failure
 User=pi
 Group=pi
 StandardOutput=syslog
