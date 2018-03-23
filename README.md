@@ -22,7 +22,9 @@ Copy and paste all text in the assist.service file included in this repository.
 Description=Assist @ reboot
 
 [Service]
-ExecStart=/home/pi/assist.py
+Type=simple
+ExecStart=/home/pi/AIY-projects-python/src/examples/voice/main.py
+Type=simple
 User=pi
 Group=pi
 StandardOutput=syslog
@@ -37,7 +39,7 @@ Control-X to exit, and Y to save. Press Enter to complete the save.
 Next, copy your assistant demo to pi folder
 ```
 cd ~/AIY-projects-python/src/examples/voice
-cp assistant_library_demo.py ~/assist.py
+cp assistant_library_demo.py main.py
 ```
 
 Enable it (for next boot) by typing in the terminal:
